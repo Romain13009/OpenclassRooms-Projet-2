@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url('fonts/regular/CaviarDreams-webfont.eot');
+  src: url('fonts/regular/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/regular/CaviarDreams-webfont.woff') format('woff'),
+       url('fonts/regular/CaviarDreams-webfont.ttf') format('truetype'),
+       url('fonts/regular/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caviar_dreamsbold';
+  src: url('fonts/bold/Caviar_Dreams_Bold-webfont.eot');
+  src: url('fonts/bold/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/bold/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+       url('fonts/bold/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+       url('fonts/bold/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*####################################### GLOBAL #######################################*/
+
+body{
+  font-family: 'caviar_dreamsbold', sans-serif;
+}
+
+#bloc_page{
+  width: 100%;
+  max-width: 980px;
+  height: 100%;
+  
+  margin: 0 auto;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px black;
+  display: flex;
+  background-color:whitesmoke;
+}
+
+/*####################################### MENU #######################################*/
+
+#menu{
+  width: 33%;
+  background-color: #F9A825;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#PP{
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  border: 2px solid rgb(255, 145, 0);
+}
+
+.photo{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.CONTACT, .PROPOS, .LOISIRS{
+  color: #F9A825;
+  background-color: rgb(63, 63, 63);
+  border-top: 2px ridge black;
+  border-bottom: 2px ridge black;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#infos_un{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#contact_infos{
+  text-shadow: 0px 1px 4px rgb(134, 134, 134); 
+  font-family: 'caviar_dreamsbold', sans-serif;
+  color: rgb(54, 54, 54);
+}
+
+#moi_infos{
+  text-shadow: 0px 1px 4px rgb(134, 134, 134); 
+  font-family: 'caviar_dreamsbold', sans-serif;
+  color: rgb(54, 54, 54);
+  font-size: 14px;
+  width: 50%;
+}
+
+#infos_deux{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#logos_div{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.logos_menu{
+  width: 2.5em;
+  height: auto;
+}
+
+
+
+/*####################################### CORPS #######################################*/
+
+#corps{
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titres_sections{
+  font-size: 20px;
+  border-bottom: 2px solid #ff9900;
+  text-shadow: 0px 1px 4px rgb(134, 134, 134);
+}
+
+.logos_corps{
+  width: 1.5em;
+  height: auto;
+  fill: #F9A825;
+}
+
+.logos_petits{
+  width: 0.8em;
+  height: auto;
+  fill: #F9A825;
+}
+
+header, #formation, #exp, #reco{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/*HEADER*/
+
+#titre{
+  text-shadow: 0px 1px 4px rgb(134, 134, 134);
+}
+
+#ROMAIN{
+  color: #ff9900;
+  font-family: 'caviar_dreamsbold', sans-serif;
+}
+
+header h2{
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+#dev{
+  border-bottom: 2px solid #ff9900;
+}
+
+/*SECTION fORMATION*/
+
+#formation{
+  display: flex;
+  flex-direction: column; 
+}
+
+#un_un{
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+
+#un_deux{
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+
+.info{
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.info p{
+  margin-left: 10px;
+}
+
+.aside_corps{
+  width: 66%;
+  height: auto;
+  margin-left: 8%;
+  margin-top: 30px;
+}
+
+h5{
+  margin-top: -10px;
+}
+
+
+/*SECTION EXPERIENCES PROFESSIONELLES*/
+
+#exp{
+  display: flex;
+  flex-direction: column;
+}
+
+#deux_un{
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+
+
+
+/*SECTION RECOMMANDATIONS*/
+
+#reco{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*####################################### RESPONSIVE #######################################*/
+
+/*PETITS ECRANS*/
+
+@media all and (max-width: 960px){
+  #bloc_page{
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  
+/*MENU*/
+
+  #menu{
+    width: 100%;    
+  }
+
+  #moi_infos{
+    width: 60%;
+  }
+
+  #logos_div{
+    width: 40%;
+  }
+
+  /*CORPS*/
+
+  #corps{
+    width: 100%;
+  }
+
+  .titres_sections{
+    font-size: 16px;
+  }    
+}
+
+
+
+
+
