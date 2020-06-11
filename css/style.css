@@ -105,15 +105,15 @@ body{
 #logos_div{
   display: flex;
   justify-content: space-around;
-  width: 50%;
-}
-
-.logos_menu{
-  width: 2.5em;
-  height: auto;
+  width: 60%;
 }
 
 
+#logos_div i {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
 
 /*####################################### CORPS #######################################*/
 
@@ -130,21 +130,13 @@ body{
   text-shadow: 0px 1px 4px rgb(134, 134, 134);
 }
 
-.logos_corps{
-  width: 1.5em;
-  height: auto;
-  fill: #F9A825;
-}
-
-.logos_petits{
-  width: 0.8em;
-  height: auto;
-  fill: #F9A825;
-}
-
 header, #formation, #exp, #reco{
   margin-left: 8%;
   margin-right: 8%;
+}
+
+#corps i{
+  color: #F9A825;
 }
 
 /*HEADER*/
@@ -199,7 +191,7 @@ header h2{
   margin-left: 10px;
 }
 
-.aside_corps{
+.div_corps{
   width: 66%;
   height: auto;
   margin-left: 8%;
@@ -231,8 +223,23 @@ h5{
 #reco{
   display: flex;
   flex-direction: column;
+
 }
 
+.recommandations{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.reco_1{
+  width: 40%;
+}
+
+.reco_2{
+  width: 40%;
+}
 
 
 /*####################################### RESPONSIVE #######################################*/
